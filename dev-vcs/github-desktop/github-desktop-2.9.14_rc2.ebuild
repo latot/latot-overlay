@@ -26,3 +26,8 @@ src_prepare() {
     eapply_user
 }
 
+src_install() {
+	cp -R "${S}/" "${D}/" || die "Install failed!"
+	einstalldocs
+}
+
