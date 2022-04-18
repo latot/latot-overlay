@@ -27,7 +27,8 @@ src_prepare() {
 }
 
 src_install() {
-	cp -r "${S}/*" "${D}" || die "Install failed!"
+	cp -r "${S}/" "${D}/" || die "Install failed!"
+	S="${S}/work"
 	einstalldocs
 }
 
