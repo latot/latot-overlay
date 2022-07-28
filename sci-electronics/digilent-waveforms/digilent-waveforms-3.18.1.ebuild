@@ -51,7 +51,7 @@ src_unpack() {
 	default
 	mkdir "${S}"
 	cd "${S}"
-	tar xzf "${WORKDIR}/data.tar.gz" \
+	tar xzf "${WORKDIR}/data.tar.xz" \
 		--exclude="usr/share/lintian" \
 		--exclude="usr/lib/digilent/waveforms/qtlibs"
 }
