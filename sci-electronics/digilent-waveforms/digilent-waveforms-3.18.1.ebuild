@@ -71,14 +71,6 @@ src_install() {
 	done
 
 	(
-		insinto /usr/lib
-		doins -r usr/lib/digilent
-
-		chmod +x "${ED}/usr/lib/digilent/waveforms/waveforms"
-		chmod +x "${ED}/usr/lib/digilent/waveforms/waveforms.sh"
-	)
-
-	(
 		insinto /usr/share
 		doins -r usr/share/applications
 		doins -r usr/share/digilent
