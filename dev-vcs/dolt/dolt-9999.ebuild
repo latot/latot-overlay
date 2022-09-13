@@ -7,6 +7,7 @@ HOMEPAGE="https://github.com/dolthub/dolt"
 SLOT="0"
 
 EGIT_REPO_URI="https://github.com/dolthub/dolt"
+EGIT_BRANCH="main"
 
 src_install() {
     dobin "dolt-linux-amd64/bin/dolt"
