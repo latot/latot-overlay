@@ -1,6 +1,7 @@
 EAPI=8
 
-inherit autotools git-r3
+inherit autotools
+#inherit git-r3
 
 DESCRIPTION="Dolt: MySQL server with git integrated"
 HOMEPAGE="https://github.com/dolthub/dolt"
