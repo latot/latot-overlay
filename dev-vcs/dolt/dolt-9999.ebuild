@@ -8,6 +8,7 @@ HOMEPAGE="https://github.com/dolthub/dolt"
 SLOT="0"
 
 SRC_URI="https://github.com/dolthub/dolt/releases/latest/download/dolt-linux-amd64.tar.gz"
+S="${WORKDIR}"
 
 #EGIT_REPO_URI="https://github.com/dolthub/dolt"
 #EGIT_BRANCH="main"
