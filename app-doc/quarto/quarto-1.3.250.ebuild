@@ -3,8 +3,6 @@
 
 EAPI=7
 
-inherit cmake
-
 DESCRIPTION="Open-source scientific and technical publishing system built on Pandoc."
 HOMEPAGE="https://github.com/quarto-dev/quarto-cli"
 
