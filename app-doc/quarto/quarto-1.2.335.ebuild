@@ -23,8 +23,9 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 
 src_install() {
+  echo ${S}
   dodir "/opt/${PN}"
   insinto "/opt/${PN}"
-  doins -r ${S}
-  dosym "/opt/${PN}/bin/quarto" "/usr/bin/quarto"
+  doins -r "${S}"
+  dosym "/opt/${PN}/${P}/bin/quarto" "/usr/bin/quarto"
 }
