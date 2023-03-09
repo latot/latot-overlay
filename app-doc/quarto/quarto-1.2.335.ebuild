@@ -28,5 +28,5 @@ src_install() {
   insinto "/opt/${PN}"
   doins -r "${S}"
   dosym "/opt/${PN}/${P}/bin/quarto" "/usr/bin/quarto"
-  fperms "/opt/${PN}"
+  fperms 755 "/opt/${PN}"
 }
