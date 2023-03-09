@@ -11,7 +11,7 @@ HOMEPAGE="https://github.com/quarto-dev/quarto-cli"
 #EGIT_COMMIT="v${PV}"
 KEYWORDS="~amd64"
 
-SRC_URI="https://github.com/quarto-dev/quarto-cli/releases/download/v1.2.335/quarto-${PV}-linux-amd64.tar.gz"
+SRC_URI="https://github.com/quarto-dev/quarto-cli/releases/download/v1.2.335/quarto-${PV}-linux-${ARCH}.tar.gz"
 
 RESTRICT="mirror"
 
