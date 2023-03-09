@@ -3,11 +3,11 @@ EAPI=8
 inherit autotools
 #inherit git-r3
 
-DESCRIPTION="Dolt: MySQL server with git integrated"
+DESCRIPTION="Dolt – Git for Data"
 HOMEPAGE="https://github.com/dolthub/dolt"
 SLOT="0"
 
-SRC_URI="https://github.com/dolthub/dolt/releases/latest/download/dolt-linux-amd64.tar.gz"
+SRC_URI="https://github.com/dolthub/dolt/releases/download/v${PV}/dolt-linux-${ARCH}.tar.gz"
 S="${WORKDIR}"
 
 #EGIT_REPO_URI="https://github.com/dolthub/dolt"
