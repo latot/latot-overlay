@@ -8,8 +8,10 @@ inherit cmake java-pkg-opt-2 python-single-r1
 
 DESCRIPTION="Translator library for raster geospatial data formats (includes OGR support)"
 HOMEPAGE="https://gdal.org/"
-SRC_URI="https://download.osgeo.org/${PN}/${PV}/${P}.tar.xz"
-SRC_URI+=" test? ( https://download.osgeo.org/${PN}/${PV}/${PN}autotest-${PV}.tar.gz )"
+
+inherit git-r3
+EGIT_REPO_URI="https://github.com/OSGeo/gdal"
+EGIT_BRANCH="release/3.7"
 
 LICENSE="BSD Info-ZIP MIT"
 SLOT="0/33" # subslot is libgdal.so.<SONAME>
@@ -98,10 +100,10 @@ QA_CONFIG_IMPL_DECL_SKIP=(
 	_wstat64 # Windows LFS
 )
 
-PATCHES=(
-	"${FILESDIR}"/${PN}-3.6.4-abseil-cpp-20230125.2-c++17.patch
-	"${FILESDIR}"/${PN}-3.7.0-zlib-OF.patch
-)
+#PATCHES=(
+#	"${FILESDIR}"/${PN}-3.6.4-abseil-cpp-20230125.2-c++17.patch
+#	"${FILESDIR}"/${PN}-3.7.0-zlib-OF.patch
+#)
 
 pkg_setup() {
 	if use python || use test ; then
